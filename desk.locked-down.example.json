@@ -1,0 +1,30 @@
+{
+  "projectRoots": ["~/work/client-projects"],
+  "operator": { "id": "<your Discord user id>", "name": "Sam" },
+  "allow": ["<your Discord user id>", "<a teammate's Discord user id>"],
+  "aliases": { "Acme Rebrand 2026": ["acme", "logo refresh"] },
+  "peerDesks": [{ "id": "<the other desk's bot user id>", "name": "OtherDesk", "for": "Alex" }],
+  "discord": {
+    "tokenFrom": { "file": "~/my-bot/.mcp.json", "key": "mcpServers.discord.env.DISCORD_TOKEN" },
+    "channelId": "<the channel the desk listens in>"
+  },
+  "brief": "~/my-desk-brief.md",
+  "worker": {
+    "permissionMode": "dontAsk",
+    "maxWorkers": 1,
+    "settingSources": "user",
+    "allowedTools": [
+      "Edit",
+      "Write",
+      "WebFetch",
+      "WebSearch",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ],
+    "disallowedTools": [
+      "Bash(git push origin main:*)",
+      "Bash(gh pr merge:*)"
+    ]
+  }
+}

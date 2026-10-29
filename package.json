@@ -1,0 +1,13 @@
+{
+  "name": "discord-bot-tools",
+  "version": "1.0.0",
+  "description": "An always-on Discord desk: tag the bot, and a hidden Claude Code worker on your machine does the work and answers in the thread.",
+  "license": "MIT",
+  "private": true,
+  "bin": { "discord-desk": "desk.js" },
+  "scripts": {
+    "test": "node --test",
+    "doctor": "node desk.js doctor"
+  },
+  "engines": { "node": ">=18" }
+}

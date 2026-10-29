@@ -1,0 +1,6 @@
+{
+  "projectRoots": ["~/Projects"],
+  "operator": { "id": "<your Discord user id>", "name": "Sam" },
+  "allow": ["<your Discord user id>", "<a teammate's Discord user id>"],
+  "discord": { "channelId": "<the channel the desk listens in>" }
+}

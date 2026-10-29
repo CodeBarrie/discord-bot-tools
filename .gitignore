@@ -1,0 +1,6 @@
+node_modules/
+*.log
+.discord-desk.json
+.discord-bot.json
+.mcp.json
+.env
